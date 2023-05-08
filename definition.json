@@ -1,0 +1,16 @@
+{
+  "type": "trigger",
+  "config": {
+    "api": {
+      "name": "Trigger API",
+      "type": "text",
+      "placeholder": "URL",
+      "value": "https://trigger.example.de/api/"
+    },
+    "evaluate": {
+      "name": "Evaluate",
+      "type": "bool",
+      "value": true
+    }
+  }
+}
