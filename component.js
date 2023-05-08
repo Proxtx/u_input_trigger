@@ -37,10 +37,12 @@ export class Component {
   }
 
   async getValue() {
+    let config = await this.iframe.combine.getTriggerConfig();
+    config.id = this.config.id ? this.config.id : config.id;
     return {
       evaluate: this.config.evaluate,
       api: this.config.api,
-      config: await this.iframe.combine.getTriggerConfig(),
+      config,
     };
   }
 }
