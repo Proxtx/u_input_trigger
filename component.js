@@ -43,6 +43,7 @@ export class Component {
       evaluate: this.config.evaluate,
       api: this.config.api,
       config,
+      type: "trigger",
     };
   }
 }
